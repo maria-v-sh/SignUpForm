@@ -1,9 +1,9 @@
 # SignUpForm
-client creation form
-using languages: html, css, javascript.
-
-The form adaptive.
-The data is verified in the form.
-If there are any errors, displays them to the user.
-if there are no errors, a message is shown that the form has been created.
-
+<h2>Client creation form</h2>
+<ul>
+  <li>The form is adaptive</li>
+  <li>The data is verified</li>
+  <li>If there are an error, the page displays this error</li>
+  <li>if there are no errors, the page displays a message that the form has been created.</li>
+  <li>html, css, javascrip</li>
+</ul>
