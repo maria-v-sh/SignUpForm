@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sign up form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="signUpForm.css">
+        <script src="signUpForm.js"></script>
+    </head>
+    <body>
+        <form>
+            <img src="images/logo.png" alt="M company logo" id="logo" width="100" height="100">
+            <h1>Sign up for free</h1>
+            <div id="tableContainer">
+                <div class="tableRow">
+                    <div class="cell">
+                        <label id="fNameLabel" for="firstName">First name<span class="required"> *</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <label id="sNameLabel" for="secondName">Last name<span class="required"> *</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="secondName" name="secondName" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <label id="dateLabel" for="dateOfBirth">Date of birth<span class="required"> *</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="date" id="dateOfBirth" name="dateOfBirth">
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <label id="phoneLabel" for="phone">Phone number<span class="required"> *</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="tel" id="phone" name="phone" placeholder="74951234567">
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <span>Gender</span>
+                    </div>
+                    <div class="cell">
+                        <span>
+                            <input id="male" type="radio" name="gender" value="male"><label for="male">Male</label>
+                            <input id="female" type="radio" name="gender" value="female"><label for="female">Female</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <span>Document type</span>
+                    </div>
+                    <div class="cell">
+                        <select id="documentType" name="document">
+                            <option value="ID" selected>ID</option>
+                            <option value="passport">Passport</option>
+                            <option value="license">Driver's license</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <label id="docNumLabel" for="docNumber">Document number<span class="required"> *</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="docNumber" name="docNumber" placeholder="Document number">
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <h3>Address:</h3>
+                    </div>
+                    <div class="cell">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <label for="street">Street address</label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="street" name="street" placeholder="Street address">
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <label for="house">House number</label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="house" name="house" placeholder="House number">
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <label id="cityLabel" for="city">City<span class="required"> *</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="city" name="city" placeholder="City">
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <label for="region">Region/State/Province</label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="region" name="region" placeholder="Region/State/Province">
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <label id="countryLabel" for="country">Country<span class="required"> *</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="country" name="country" placeholder="Country">
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <label for="zip">ZIP/Postal Code</label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="zip" name="zip" placeholder="ZIP/Postal Code">
+                    </div>
+                </div>
+                <div class="tableRow">
+                    <div class="cell">
+                        <span>Receive information via</span>
+                    </div>
+                    <div class="cell">
+                        <span>
+                            <label><input type="checkbox" name="advert" value="mail">E-mail</label>
+                            <label><input type="checkbox" name="advert" value="mobile">Phone</label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <p class="requiredText"><span class="required">* </span>indicates a required field</p>
+            <p><input type="button" id="button" value="Sign up"></p>
+        </form>
+    </body>
+</html>

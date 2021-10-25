@@ -1,0 +1,79 @@
+body {
+    background: #a9e8db;
+    font-size: medium;
+    /* font: small #02537d sans-serif; */
+}
+
+form {
+    border: solid #01bfc4 1px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    background: #e0f7e6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #02537d;
+    padding-bottom: 20px;
+}
+
+#tableContainer {
+    display: table;
+    border-spacing: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableRow {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    vertical-align: top;
+}
+
+#dateOfBirth {
+    width: 93%;
+}
+
+#documentType{
+    width: 100%;
+}
+
+input, select {
+    border-radius: 5px;
+    border: 1px rgb(144, 160, 156) solid;
+    padding: 5px;
+}
+
+.required{
+    color: red;
+}
+
+#button {
+    background-color: #02537d;
+    padding: 10px 40px;
+    color: #e0f7e6;
+    font-weight: bold;
+    font-size: medium;
+    border: outset 2px #0184a9;
+    /* margin-bottom: 15px; */
+}
+
+#button:hover {
+    background-color: #046ca0;
+}
+
+#button:active {
+    background-color: #023c58;
+    border: groove 2px #0184a9;
+}
+
+h1, img, #button, .requiredText {
+    margin-left: 38px;
+}
+
+img{
+    margin-top: 38px;
+}
