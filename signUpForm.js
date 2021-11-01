@@ -24,14 +24,14 @@ window.onload = function(){
 
 function clickHandle() {
 
-    var listIDFilds = [ID_FIRST_NAME, ID_LAST_NAME, ID_DATE, ID_PHONE, ID_DOCUMENT_NUMBER, ID_CITY, ID_COUNTRY];
-    var listLabelFilds = [LABEL_FIRST_NAME, LABEL_LAST_NAME, LABEL_DATE, LABEL_PHONE, LABEL_DOCUMENT_NUMBER, LABEL_CITY, LABEL_COUNTRY];
+    var listIDFields = [ID_FIRST_NAME, ID_LAST_NAME, ID_DATE, ID_PHONE, ID_DOCUMENT_NUMBER, ID_CITY, ID_COUNTRY];
+    var listLabelFields = [LABEL_FIRST_NAME, LABEL_LAST_NAME, LABEL_DATE, LABEL_PHONE, LABEL_DOCUMENT_NUMBER, LABEL_CITY, LABEL_COUNTRY];
 
-    colorFildsLabels(listIDFilds, listLabelFilds);
-    var numEmptyFilds = getNumEmptyFilds(listIDFilds);
+    colorFieldsLabels(listIDFields, listLabelFields);
+    var numEmptyFields = getNumEmptyFields(listIDFields);
 
     var numMistakes = 0;
-    if(numEmptyFilds > 0){
+    if(numEmptyFields > 0){
         alert("Please fill in all fields marked with a star and red color text");
         numMistakes++;
     } else {
@@ -62,29 +62,29 @@ function clickHandle() {
 }
 
 
-// Filds //
-function colorFildsLabels(listIDFilds, listLabelFilds) {
+// Fields //
+function colorFieldsLabels(listIDFields, listLabelFields) {
 
-    for(var i = 0; i < listIDFilds.length; i++) {
-        if(isEmptyFild(listIDFilds[i])){
-            colorText(listLabelFilds[i], REQUIRED_TEXT_COLOR);
+    for(var i = 0; i < listIDFields.length; i++) {
+        if(isEmptyField(listIDFields[i])){
+            colorText(listLabelFields[i], REQUIRED_TEXT_COLOR);
         } else {
-            colorText(listLabelFilds[i], TEXT_COLOR);
+            colorText(listLabelFields[i], TEXT_COLOR);
         }
     }
 }
 
-function getNumEmptyFilds(listIDFilds) {
+function getNumEmptyFields(listIDFields) {
     var num = 0;
-    for(var i = 0; i < listIDFilds.length; i++) {
-        if(isEmptyFild(listIDFilds[i])){
+    for(var i = 0; i < listIDFields.length; i++) {
+        if(isEmptyField(listIDFields[i])){
             num++;
         }
     }
     return num;
 }
 
-function isEmptyFild(id){
+function isEmptyField(id){
     var dataId = document.getElementById(id).value;
     if (!dataId) {
         return true;
@@ -144,3 +144,4 @@ function checkFirstDigitOfPhoneNumber(id) {
     } 
     return false;
 }
+
